@@ -42,7 +42,7 @@
             "reliable_remote_ports": {"first": "50000", "last": "50010"}
         }
     ],  
-    "routing" : "MethodApp2",
+    "routing" : "MethodApp",
     "service-discovery" :
     {
         "enable" : "true",
