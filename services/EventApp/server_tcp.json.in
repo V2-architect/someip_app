@@ -17,20 +17,11 @@
     "services" :
     [
         {
-            "service" : "0x7D0",
-            "instance" : "0x7D0",
+            "service" : "0x2000",
+            "instance" : "0x2000",
             "reliable" : 
 	    	{
                 "port": "50000",
-				"enable-magic-cookies": "false"
-            }
-        },
-        {
-            "service" : "0x7D2",
-            "instance" : "0x7D2",
-            "reliable" : 
-            {
-                "port": "50002",
 				"enable-magic-cookies": "false"
             }
         }
