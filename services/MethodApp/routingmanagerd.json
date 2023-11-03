@@ -1,5 +1,5 @@
 {
-    "unicast" : "10.0.0.101",
+    "unicast" : "172.17.0.2",
     "logging" :
     { 
         "level" : "debug",
@@ -11,12 +11,7 @@
     [
         {
             "service" : "0x1234",
-            "instance" : "0x5678",
-            "reliable" : 
-	    {
-                "port": "53520",
-		"enable-magic-cookies": "false"
-            }
+            "instance" : "0x5678"
         }
     ],
     "routing" : "routingmanagerd",
