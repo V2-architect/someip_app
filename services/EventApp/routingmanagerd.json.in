@@ -28,7 +28,28 @@
             {
                 "port": "32100",
                 "enable-magic-cookies": "false"
-            }
+            },
+            "eventgroups" :
+            [
+                {
+                    "eventgroup" : "0x1",
+                    "threshold" : "1",
+                    "is_multicast" : "true",
+                    "events" : [ "40001", "40002" ]
+                },
+                {
+                    "eventgroup" : "0x2",
+                    "threshold" : "1",
+                    "is_multicast" : "true",
+                    "events" : [ "40003" ]
+                },
+                {
+                    "eventgroup" : "0x3",
+                    "threshold" : "1",
+                    "is_multicast" : "true",
+                    "events" : [ "40004" ]
+                }
+            ]
         }
     ],
     "routing" : "routingmanagerd",
