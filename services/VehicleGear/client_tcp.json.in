@@ -1,0 +1,17 @@
+{
+    "unicast" : "@SOMEIP_HOST_IP@",
+    "logging" :
+    { 
+        "level" : "trace",
+        "console" : "true",
+        "file" : { "enable" : "false", "path" : "/tmp/vsomeip.log" },
+        "dlt" : "false"
+    },
+    "applications" :
+    [
+        {
+            "name" : "VehicleGear",
+            "id" : "0x2003"
+        }
+    ]
+}
