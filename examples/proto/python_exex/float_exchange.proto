@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package floatexchange;
+
+// 메시지 정의
+message FloatRequest {
+    float num1 = 1;
+    float num2 = 2;
+    float num3 = 3;
+}
+
+message FloatResponse {
+    float result1 = 1;
+    float result2 = 2;
+    float result3 = 3;
+}
+
+// 서비스 정의
+service FloatExchange {
+    rpc SendFloats (FloatRequest) returns (FloatResponse);
+}
+
