@@ -7,6 +7,10 @@
 #    exit -1
 #fi
 
+# set curr_path to script_path
+CURR_SH_PATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+cd ${CURR_SH_PATH}
+
 HOSTNAME=$(hostname)
 SOMEIP_HOST_IP=`cat host_ip.txt | grep $(hostname) | awk -F: '{print $2}'`
 
