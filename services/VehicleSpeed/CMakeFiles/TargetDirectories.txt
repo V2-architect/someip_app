@@ -1,4 +1,0 @@
-/home/jhshin/work/someip_dev/services/VehicleSpeed/build/CMakeFiles/rebuild_cache.dir
-/home/jhshin/work/someip_dev/services/VehicleSpeed/build/CMakeFiles/edit_cache.dir
-/home/jhshin/work/someip_dev/services/VehicleSpeed/build/CMakeFiles/VehicleSpeed_server.dir
-/home/jhshin/work/someip_dev/services/VehicleSpeed/build/CMakeFiles/VehicleSpeed_client.dir

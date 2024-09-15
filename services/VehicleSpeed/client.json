@@ -1,5 +1,5 @@
 {
-    "unicast" : "@SOMEIP_HOST_IP@",
+    "unicast" : "10.0.0.6",
     "logging" :
     { 
         "level" : "trace",
@@ -11,20 +11,30 @@
     [
         {
             "name" : "VehicleSpeed",
-            "id" : "0x2001"
+            "id" : "0x1000"
         }
     ],
     "services" :
     [
         {
-            "service" : "0x2001",
-            "instance" : "0x2001",
-            "unreliable" : "32000",
-            "reliable" : 
-	    	{
-                "port": "32100",
-				"enable-magic-cookies": "false"
-            }
+            "service" : "0x1000",
+            "instance" : "0x0001",
+            "unreliable" : "31000",
+            "reliable" :
+                {
+                "port": "41000",
+                "enable-magic-cookies": "false"
+            },
+            "eventgroups": [
+                {
+                    "eventgroup": "0x0100",
+                    "multicast": {
+                        "address": "239.10.0.11",
+                        "port": "31100"
+                    },
+                    "threshold": 1
+                }
+            ]
         }
     ],
     "clients" :
@@ -33,7 +43,7 @@
             "reliable_client_ports": {"first": "32100", "last": "32110"},
             "reliable_remote_ports": {"first": "32100", "last": "32110"}
         }
-    ],  
+    ], 
     "routing" : "routingmanagerd",
     "service-discovery" :
     {

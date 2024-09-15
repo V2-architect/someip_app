@@ -1,39 +1,41 @@
 {
-    "unicast" : "10.0.0.1",
+    "unicast" : "@SOMEIP_HOST_IP@",
     "logging" :
     { 
-        "level" : "debug",
+        "level" : "trace",
         "console" : "true",
         "file" : { "enable" : "false", "path" : "/tmp/vsomeip.log" },
         "dlt" : "false"
     },
+    "applications" :
+    [
+        {
+            "name" : "VehicleSpeed",
+            "id" : "0x1000"
+        }
+    ],
     "services" :
     [
         {
-            "service" : "0x2001",
-            "instance" : "0x2001",
-            "unreliable": "32000",
-	    "eventgroups": [
-		{
-		    "eventgroup": "0x0001",
-		    "multicast": {
-			"address": "239.10.0.2",
-			"port": "32001"
-		    },
-		    "threshold": 3
-		}
-	    ]
-        },
-        {
-            "service" : "0x2002",
-            "instance" : "0x2002",
+            "service" : "0x1000",
+            "instance" : "0x0001",
+            "unreliable" : "31000",
             "reliable" :
-            {
-                "port": "32100",
+                {
+                "port": "41000",
                 "enable-magic-cookies": "false"
-            }
+            },
+            "eventgroups": [
+                {
+                    "eventgroup": "0x0100",
+                    "multicast": {
+                        "address": "239.10.0.11",
+                        "port": "31100"
+                    },
+                    "threshold": 1
+                }
+            ]
         }
-
     ],
     "routing" : "routingmanagerd",
     "service-discovery" :

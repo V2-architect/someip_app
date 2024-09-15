@@ -9,6 +9,25 @@
     },
 	"services": [
 		{
+			"service": "0x1000",
+			"instance": "0x0001",
+			"unreliable": "31000",
+			"reliable": {
+				"port": "41000",
+				"enable-magic-cookies": "false"
+			},
+			"eventgroups": [
+				{
+					"eventgroup": "0x0100",
+					"multicast": {
+						"address": "239.10.0.11",
+						"port": "31100"
+					},
+					"threshold": 1
+				}
+			]
+		},
+		{
 			"service": "0x3003",
 			"instance": "0x0001",
 			"unreliable": "33003",
