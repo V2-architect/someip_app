@@ -1,5 +1,5 @@
 {
-    "unicast" : "10.0.0.8",
+    "unicast" : "10.0.3.8",
     "logging" :
     { 
         "level" : "debug",
@@ -23,7 +23,7 @@
 						"address": "239.10.0.11",
 						"port": "31100"
 					},
-					"threshold": 1
+					"threshold": 5
 				}
 			]
 		},
@@ -42,7 +42,7 @@
 						"address": "239.10.0.13",
 						"port": "33303"
 					},
-					"threshold": 1
+					"threshold": 5
 				}
 			]
 		},
@@ -61,7 +61,7 @@
 						"address": "239.10.0.12",
 						"port": "32201"
 					},
-					"threshold": 1
+					"threshold": 5
 				}
 			]
 		},
@@ -80,7 +80,7 @@
 						"address": "239.10.0.13",
 						"port": "33301"
 					},
-					"threshold": 1
+					"threshold": 5
 				}
 			]
 		},
@@ -99,7 +99,7 @@
 						"address": "239.10.0.13",
 						"port": "33302"
 					},
-					"threshold": 1
+					"threshold": 5
 				}
 			]
 		},
@@ -118,7 +118,7 @@
 						"address": "239.10.0.12",
 						"port": "32204"
 					},
-					"threshold": 1
+					"threshold": 5
 				}
 			]
 		},
@@ -137,7 +137,7 @@
 						"address": "239.10.0.13",
 						"port": "33300"
 					},
-					"threshold": 1
+					"threshold": 5
 				}
 			]
 		},
@@ -156,7 +156,7 @@
 						"address": "239.10.0.12",
 						"port": "32200"
 					},
-					"threshold": 1
+					"threshold": 5
 				}
 			]
 		},
@@ -175,7 +175,7 @@
 						"address": "239.10.0.11",
 						"port": "31102"
 					},
-					"threshold": 1
+					"threshold": 5
 				}
 			]
 		},
@@ -194,7 +194,7 @@
 						"address": "239.10.0.11",
 						"port": "31103"
 					},
-					"threshold": 1
+					"threshold": 5
 				}
 			]
 		},
@@ -213,7 +213,7 @@
 						"address": "239.10.0.11",
 						"port": "31101"
 					},
-					"threshold": 1
+					"threshold": 5
 				}
 			]
 		}
@@ -222,7 +222,7 @@
     "service-discovery" :
     {
         "enable" : "true",
-        "multicast" : "239.10.0.1",
+        "multicast" : "239.10.3.1",
         "port" : "30490",
         "protocol" : "udp",
         "initial_delay_min" : "10",
