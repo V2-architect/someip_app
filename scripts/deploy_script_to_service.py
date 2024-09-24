@@ -1,5 +1,6 @@
 
 import os
+import pdb
 
 # 현재 스크립트의 파일 경로를 얻음
 script_path = os.path.abspath(__file__)
