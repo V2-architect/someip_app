@@ -2,10 +2,12 @@
     "unicast" : "10.0.3.3",
     "logging" :
     { 
-        "level" : "debug",
+        "level" : "trace",
         "console" : "true",
-        "file" : { "enable" : "false", "path" : "/tmp/vsomeip.log" },
-        "dlt" : "false"
+        "file" : { "enable" : "true", "path" : "/root/someip_app/logs/zone_gw_rl-routingmanager.log" },
+        "dlt" : "false",
+        "memory_log_interval": 1,
+        "status_log_interval": 1
     },
 	"services": [
 		{

@@ -1,17 +1,19 @@
 {
     "unicast" : "@SOMEIP_HOST_IP@",
     "logging" :
-    { 
+    {
         "level" : "trace",
         "console" : "true",
-        "file" : { "enable" : "false", "path" : "/tmp/vsomeip.log" },
-        "dlt" : "false"
+        "file" : { "enable" : "true", "path" : "@LOGGING_FILEPATH@" },
+        "dlt" : "false",
+        "memory_log_interval": 1,
+        "status_log_interval": 1
     },
     "applications" :
     [
         {
             "name" : "VehicleSpeed",
-            "id" : "0x9999"
+            "id" : "0x1000"
         }
     ],
     "services" :
