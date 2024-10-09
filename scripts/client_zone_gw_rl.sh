@@ -1,5 +1,5 @@
 #!/bin/bash
 
-
-echo "Nothing to run client at zone_gw_rl"
+/root/someip_app/services/Audio/run_client.sh udp 1 &
+sleep 1
 

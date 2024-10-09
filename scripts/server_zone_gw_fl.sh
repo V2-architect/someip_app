@@ -12,5 +12,7 @@ if [ -z "${TARGET}" -o "${TARGET}" = "service" ];
 then
     /root/someip_app/services/SteeringWheel/run_server.sh udp 1 &
     /root/someip_app/services/Transmission/run_server.sh udp 1 &
+    /root/someip_app/services/Audio/run_server.sh udp 1 &
+    #/root/someip_app/services/Hvac/run_server.sh udp 1 &
 fi
 
