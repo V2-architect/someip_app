@@ -1,10 +1,10 @@
 {
-    "unicast" : "10.0.3.6",
+    "unicast" : "10.0.3.5",
     "logging" :
     {
         "level" : "trace",
         "console" : "true",
-        "file" : { "enable" : "true", "path" : "/root/someip_app/logs/cluster-Hvac-client.log" },
+        "file" : { "enable" : "true", "path" : "/root/someip_app/logs/ivi-Window_RL-client.log" },
         "dlt" : "false",
         "memory_log_interval": 1,
         "status_log_interval": 1
@@ -12,27 +12,27 @@
     "applications" :
     [
         {
-            "name" : "Hvac",
-            "id" : "0x4000"
+            "name" : "Window_RL",
+            "id" : "0x5002"
         }
     ],
     "services" :
     [
         {
-            "service" : "0x4000",
+            "service" : "0x5002",
             "instance" : "0x0001",
-            "unreliable" : "34000",
+            "unreliable" : "35002",
             "reliable" :
                 {
-                "port": "44000",
+                "port": "44004",
                 "enable-magic-cookies": "false"
             },
             "eventgroups": [
                 {
-                    "eventgroup": "0x0400",
+                    "eventgroup": "0x0500",
                     "multicast": {
-                        "address": "239.10.3.14",
-                        "port": "34400"
+                        "address": "239.10.3.15",
+                        "port": "35502"
                     },
                     "threshold": 1
                 }

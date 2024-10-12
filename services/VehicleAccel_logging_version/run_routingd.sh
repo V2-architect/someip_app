@@ -3,21 +3,14 @@
 # leave as before
 #if [ -z "$1" ]; then
 #    echo "[Error] input the argument like below"
-#    echo "  $ $0 [<delay(second),default(5s)>]
-#    echo "  $ $0 5
+#    echo "  $ $0 <HOST_IP>"
+#    echo "  $ $0 10.0.0.1"
 #    exit -1
 #fi
 
 # set curr_path to script_path
 CURR_SH_PATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 cd ${CURR_SH_PATH}
-
-LAUNCH_DELAY=$1
-if [ -z "$1" ]; then
-    LAUNCH_DELAY=5
-fi
-echo "LAUNCH_DELAY: "${LAUNCH_DELAY}
-sleep ${LAUNCH_DELAY}
 
 
 # get data from user input

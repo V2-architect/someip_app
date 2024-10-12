@@ -2,14 +2,14 @@ VehicleSpeed:VehicleSpeedAxis:20
 VehiclePose:VehiclePosition:20
 VehiclePose:AngularVelocity:20
 VehicleAccel:AccelAxis:20
-VehicleLocation:LocationInfo:100
 Transmission:GearStatus:20
 Driving:AccelStatus:10
 Driving:BrakeStatus:10
 SteeringWheel:SteeringWheelStatus:20
-TrafficLight:TrafficLightStatus:100
-Intersection:IntersectionInfo:200
 ObjectDetection:ObjectType:20
 ObjectDetection:ObjectVelocityAxis:20
 ObjectDetection:ObjectAccelAxis:20
 Collision:ObjectType:20
+TrafficLight:TrafficLightStatus:200
+Intersection:IntersectionInfo:200
+VehicleLocation:LocationInfo:100
