@@ -1,0 +1,111 @@
+{
+    "common": {
+        "run_r_interval_min": 0,
+        "run_r_interval_max": 2,
+        "run_s_interval_min": 0,
+        "run_s_interval_max": 2,
+        "run_c_interval_min": 0,
+        "run_c_interval_max": 2
+    },
+    "ecus": [
+        "zone_gw_fl",
+        "zone_gw_fr",
+        "zone_gw_rl",
+        "zone_gw_rr",
+        "ivi",
+        "cluster",
+        "adas",
+        "telematics"
+    ],
+    "zone_gw_fl": {
+        "someip_servers": [
+            ["SteeringWheel", "udp"],
+            ["Transmission", "udp"],
+            ["Audio", "udp"],
+            ["Window_FL", "udp"]
+        ],
+        "someip_clients": [
+        ]
+    },
+    "zone_gw_fr": {
+        "someip_servers": [
+            ["VehicleAccel", "udp"],
+            ["Driving", "udp"],
+            ["Window_FR", "udp"]
+        ],
+        "someip_clients": [
+            ["Audio", "udp"]
+        ]
+    },
+    "zone_gw_rl": {
+        "someip_servers": [
+            ["VehiclePose", "udp"],
+            ["Window_RL", "udp"]
+        ],
+        "someip_clients": [
+            ["Audio", "udp"]
+        ]
+    },
+    "zone_gw_rr": {
+        "someip_servers": [
+            ["VehicleSpeed", "udp"],
+            ["Window_RR", "udp"]
+        ],
+        "someip_clients": [
+            ["Audio", "udp"]
+        ]
+    },
+    "ivi": {
+        "someip_servers": [
+            ["Logging", "tcp"]
+        ],
+        "someip_clients": [
+            ["ObjectDetection", "udp"],
+            ["VehicleLocation", "udp"],
+            ["VehicleSpeed", "udp"],
+            ["Transmission", "udp"],
+            ["Collision", "udp"],
+            ["Audio", "udp"],
+            ["Window_FL", "udp"],
+            ["Window_FR", "udp"],
+            ["Window_RL", "udp"],
+            ["Window_RR", "udp"]
+        ]
+    },
+    "cluster": {
+        "someip_servers": [
+        ],
+        "someip_clients": [
+            ["Transmission", "udp"],
+            ["Collision", "udp"],
+            ["VehicleSpeed", "udp"],
+            ["VehicleLocation", "udp"]
+        ]
+    },
+    "adas": {
+        "someip_servers": [
+            ["Collision", "udp"],
+            ["ObjectDetection", "udp"]
+        ],
+        "someip_clients": [
+            ["SteeringWheel", "udp"],
+            ["TrafficLight", "udp"],
+            ["Intersection", "udp"],
+            ["VehiclePose", "udp"],
+            ["VehicleAccel", "udp"],
+            ["Driving", "udp"],
+            ["VehicleSpeed", "udp"],
+            ["Transmission", "udp"]
+        ]
+    },
+    "telematics": {
+        "someip_servers": [
+            ["TrafficLight", "udp"],
+            ["Intersection", "udp"],
+            ["VehicleLocation", "udp"]
+        ],
+        "someip_clients": [
+            ["Logging", "tcp"]
+        ]
+    }
+}
