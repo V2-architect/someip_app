@@ -3,6 +3,7 @@ import os
 import time
 import sys
 import pdb
+import random
 
 target = ""
 if len(sys.argv) > 1:
@@ -28,6 +29,9 @@ vECUs = [
 for vECU in vECUs:
     os.system(f"sudo docker exec -itd {vECU} bash -c \"nohup /root/someip_app/scripts/ss.sh {target}\"")
     print(f"[{vECU}] SOME/IP {target} init done")
+    waiting = random.randint(1, 3)
+    print(f"sleep({waiting})")
+    time.sleep(waiting)
 
 if target == "routing":
     time.sleep(5)

@@ -11,5 +11,6 @@ fi
 if [ -z "${TARGET}" -o "${TARGET}" = "service" ];
 then
     /root/someip_app/services/VehiclePose/run_server.sh udp 1 &
+    /root/someip_app/services/Window_RL/run_server.sh udp 1 &
 fi
 
