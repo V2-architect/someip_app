@@ -23,7 +23,11 @@ def deploy(SERVICE_NAME):
         '''
 
 def deploy_all():
-    service_list = ["Collision", "Driving", "Intersection", "ObjectDetection", "SteeringWheel", "TrafficLight", "Transmission", "VehicleAccel", "VehicleLocation", "VehiclePose", "VehicleSpeed", "Logging"]
+    service_list = ["Collision", "Driving", "Intersection", "ObjectDetection", "SteeringWheel", \
+                    "TrafficLight", "Transmission", "VehicleAccel", "VehicleLocation", \
+                    "VehiclePose", "VehicleSpeed", "Logging",
+                    "Audio", "Window_FL", "Window_FR", "Window_RL", "Window_RR"
+                    ]
 
     for svc in service_list:
         print(f"Copy someip_dev/ to current directory ({svc})")
