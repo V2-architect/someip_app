@@ -177,7 +177,7 @@
 						"address": "239.10.3.11",
 						"port": "31102"
 					},
-					"threshold": 2
+					"threshold": 1
 				}
 			]
 		},
@@ -226,6 +226,96 @@
                 "port": "46000",
                 "enable-magic-cookies": "false"
             }
+        },
+        {
+            "service" : "0x4000",
+            "instance" : "0x0001",
+            "unreliable" : "34000",
+            "eventgroups": [
+                {
+                    "eventgroup": "0x0400",
+                    "multicast": {
+                        "address": "239.10.3.14",
+                        "port": "34400"
+                    },
+                    "threshold": 1
+                }
+            ]
+        },
+        {
+            "service" : "0x4001",
+            "instance" : "0x0001",
+            "unreliable" : "34001",
+            "eventgroups": [
+                {
+                    "eventgroup": "0x0400",
+                    "multicast": {
+                        "address": "239.10.3.14",
+                        "port": "34401"
+                    },
+                    "threshold": 10
+                }
+            ]
+        },
+        {
+            "service" : "0x5000",
+            "instance" : "0x0001",
+            "unreliable" : "35000",
+            "eventgroups": [
+                {
+                    "eventgroup": "0x0500",
+                    "multicast": {
+                        "address": "239.10.3.15",
+                        "port": "35500"
+                    },
+                    "threshold": 1
+                }
+            ]
+        },
+        {
+            "service" : "0x5001",
+            "instance" : "0x0001",
+            "unreliable" : "35001",
+            "eventgroups": [
+                {
+                    "eventgroup": "0x0500",
+                    "multicast": {
+                        "address": "239.10.3.15",
+                        "port": "35501"
+                    },
+                    "threshold": 1
+                }
+            ]
+        },
+        {
+            "service" : "0x5002",
+            "instance" : "0x0001",
+            "unreliable" : "35002",
+            "eventgroups": [
+                {
+                    "eventgroup": "0x0500",
+                    "multicast": {
+                        "address": "239.10.3.15",
+                        "port": "35502"
+                    },
+                    "threshold": 1
+                }
+            ]
+        },
+        {
+            "service" : "0x5003",
+            "instance" : "0x0001",
+            "unreliable" : "35003",
+            "eventgroups": [
+                {
+                    "eventgroup": "0x0500",
+                    "multicast": {
+                        "address": "239.10.3.15",
+                        "port": "35503"
+                    },
+                    "threshold": 1
+                }
+            ]
         }
 	],
     "routing" : "routingmanagerd",
@@ -240,7 +330,7 @@
         "repetitions_base_delay" : "200",
         "repetitions_max" : "5",
         "ttl" : "3",
-        "cyclic_offer_delay" : "3000",
-        "request_response_delay" : "3000"
+        "cyclic_offer_delay" : "2000",
+        "request_response_delay" : "1500"
     }
 }
