@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo docker stop $(sudo docker ps | grep mn. | awk '{print $NF}')
+sudo docker stop $(sudo docker ps --all | grep mn. | awk '{print $NF}')
