@@ -28,6 +28,7 @@ echo "kill all tcpdump process - end"
 #echo "chown jhshin:jhshin eth*.pcap"
 #sudo chown jhshin:jhshin eth*.pcap
 
+echo "sleep 10"
 sleep 10
 
 echo "merge all *.pcap files -> merged.pcap - start"

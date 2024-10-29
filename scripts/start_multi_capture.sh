@@ -4,6 +4,9 @@ CURR_DATE=`date +%y%m%d-%H%M%S`
 PCAP_FILE="inbound-${CURR_DATE}.pcap"
 echo "CURR_DATE: "${CURR_DATE}
 
+echo 'check sudo permission to run this script'
+sudo echo ' '
+
 sudo tcpdump -i s1-eth1 ether src 00:00:00:00:00:01 -w eth1.pcap &
 sudo tcpdump -i s1-eth2 ether src 00:00:00:00:00:02 -w eth2.pcap &
 sudo tcpdump -i s1-eth3 ether src 00:00:00:00:00:03 -w eth3.pcap &
