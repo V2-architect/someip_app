@@ -1,0 +1,56 @@
+{
+    "common": {
+        "run_r_interval_min": 0,
+        "run_r_interval_max": 2,
+        "run_s_interval_min": 0,
+        "run_s_interval_max": 2,
+        "run_c_interval_min": 0,
+        "run_c_interval_max": 2
+    },
+    "ecus": [
+        "zone_gw_fl",
+        "zone_gw_fr",
+        "zone_gw_rl",
+        "zone_gw_rr",
+        "ivi",
+        "cluster",
+        "adas",
+        "telematics"
+    ],
+    "zone_gw_fl": {
+        "someip_servers": [],
+        "someip_clients": []
+    },
+    "zone_gw_fr": {
+        "someip_servers": [],
+        "someip_clients": []
+    },
+    "zone_gw_rl": {
+        "someip_servers": [],
+        "someip_clients": []
+    },
+    "zone_gw_rr": {
+        "someip_servers": [],
+        "someip_clients": []
+    },
+    "ivi": {
+        "someip_servers": [],
+        "someip_clients": [
+            ["Update", "tcp"]
+        ]
+    },
+    "cluster": {
+        "someip_servers": [
+            ["Update", "tcp"]
+        ],
+        "someip_clients": []
+    },
+    "adas": {
+        "someip_servers": [],
+        "someip_clients": []
+    },
+    "telematics": {
+        "someip_servers": [],
+        "someip_clients": []
+    }
+}
