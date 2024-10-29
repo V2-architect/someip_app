@@ -69,11 +69,13 @@
             ["Window_FL", "udp"],
             ["Window_FR", "udp"],
             ["Window_RL", "udp"],
-            ["Window_RR", "udp"]
+            ["Window_RR", "udp"],
+            ["Update", "tcp"]
         ]
     },
     "cluster": {
         "someip_servers": [
+            ["Update", "tcp"]
         ],
         "someip_clients": [
             ["Transmission", "udp"],
