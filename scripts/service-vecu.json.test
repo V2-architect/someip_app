@@ -34,7 +34,9 @@
         "someip_clients": []
     },
     "ivi": {
-        "someip_servers": [],
+        "someip_servers": [
+            ["Logging", "tcp"]
+        ],
         "someip_clients": [
             ["Update", "tcp"]
         ]
@@ -51,6 +53,8 @@
     },
     "telematics": {
         "someip_servers": [],
-        "someip_clients": []
+        "someip_clients": [
+            ["Logging", "tcp"]
+        ]
     }
 }
