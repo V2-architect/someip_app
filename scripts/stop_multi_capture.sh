@@ -41,8 +41,7 @@ sudo mergecap -w merged.pcap \
     eth6.pcap \
     eth7.pcap \
     eth8.pcap \
-    eth8_mac_flooding.pcap \
-    eth8_syn_flooding.pcap
+    eth8_mac_flooding.pcap
 echo "merge all *.pcap files -> merged.pcap - end"
 
 echo "rename merged.pcap to ${PCAP_FILE}"

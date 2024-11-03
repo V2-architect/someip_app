@@ -51,7 +51,7 @@ class DosAttack:
 
     def do_dos_attack(self, packet):
         packets = []
-        packet[IP].ttl = 0x4
+        packet[IP].ttl = 0x4  # DoS attack IP layer TTL = 4
 
         for _ in range(1000):
             # original(ttl) = 0x1

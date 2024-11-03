@@ -29,7 +29,7 @@ while True:
 
         #packet = Ether(src=src_mac, dst=dst_mac) / IP(src=src_ip, dst=dst_ip) / ICMP()
         packet = Ether(src=src_mac, dst=dst_mac) / IP(src=src_ip, dst=dst_ip) / Padding(b'\x00' * 22)
-        packet[IP].ttl = 10
+        packet[IP].ttl = 6
 
         packet = update_ip_chksum(packet)
 

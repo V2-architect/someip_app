@@ -23,7 +23,7 @@ def process_packet(packet):
             index = 0
         data = struct.pack('>fff', speed_x_tempered, speed_y, speed_z)
         packet[SOMEIP].payload = Raw(load=data)
-        packet[IP].ttl = 5
+        packet[IP].ttl = 5  # Replay(Tempering) IP TTL = 5
         packet[Ether].src = '00:00:00:00:00:08'
         packet[SOMEIP].session_id += 10
         if packet[SOMEIP].session_id >= 65535:

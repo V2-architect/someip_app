@@ -15,8 +15,7 @@ sudo tcpdump -i s1-eth5 ether src 00:00:00:00:00:05 -w eth5.pcap &
 sudo tcpdump -i s1-eth6 ether src 00:00:00:00:00:06 -w eth6.pcap &
 sudo tcpdump -i s1-eth7 ether src 00:00:00:00:00:07 -w eth7.pcap &
 sudo tcpdump -i s1-eth8 ether src 00:00:00:00:00:08 -w eth8.pcap &
-sudo tcpdump -i s1-eth8 'ip[8] == 10'               -w eth8_mac_flooding.pcap &
-sudo tcpdump -i s1-eth8 'ip[8] == 11'               -w eth8_syn_flooding.pcap &
+sudo tcpdump -i s1-eth8 'ip[8] == 6'                -w eth8_mac_flooding.pcap &
 
 #sudo tshark -i s1-eth1 -t ad -f "inbound" -w /tmp/eth1.pcap &
 #sudo tshark -i s1-eth2 -t ad -f "inbound" -w /tmp/eth2.pcap &

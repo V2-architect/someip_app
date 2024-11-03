@@ -25,11 +25,6 @@ while True:
     time.sleep(delay)
 
 
-
-
-
-
-
 '''
 with open('syn_flood.pkl', 'rb') as f:
     syn_packet = pickle.load(f)
